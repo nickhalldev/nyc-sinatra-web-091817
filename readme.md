@@ -9,10 +9,9 @@ languages: ruby
 We're going to build a history site for New York City, so we're going to need to
 create the following database structure.
 
-* Landmarks `belong_to` the year they were built
-* Figure(Historical figures) `have_many` titles
-* Titles `have_many` People
-* Landmarks can also `belong_to` a person who built it
+* landmarks `belong_to` the figure who built it
+* figures(Historical figures) `have_many` titles
+* titles `have_many` figures
 
 So for example:
 
@@ -67,7 +66,15 @@ call it something less clear like Roles if you wanted to.
 | 4                  | 1                      | 9             |
 | 5                  | 4                      | 1             |
 
-Make sure to create web pages, routes, etc to add figures, titles, landmarks, years, etc.
+Make sure to create web pages, routes, etc. to add, update, and edit figures,
+titles, landmarks, years, etc.
 
-You should be able to create a figure if he/she doesn't exist when creating a
-title, or just add an existing figure to a title.
+Your forms will need to be complex. So when you create a new title, you can also
+add a figure to that title. You should also be able to create a new figure if
+he/she doesn't already exist in your database. The same applies for all your models
+that have an association.
+
+Your forms should allow multiple select, so you should also be able to add
+multiple figures to a title at the same time, e.g. If I create the Mayor title
+and a bunch of mayors are already in my database, I'll want to add them all at
+once when I create the Mayor title.
