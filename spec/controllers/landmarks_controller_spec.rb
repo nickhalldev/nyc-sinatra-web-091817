@@ -9,13 +9,22 @@ describe LandmarksController do
     Landmark.destroy_all
   end
 
+  it "allows you to create a new landmark" do
+    pending "write your own spec!"
+  end
+
   it "allows you to list all landmarks" do
     get '/landmarks'
     expect(last_response.status).to eq(200)
   end
 
   it "allows you to see a single landmark" do
-    get "/landmark/1"
+    @landmark = Landmark.first.id
+    get "/landmark/#{@landmark}"
     expect(last_response.status).to eq(200)
+  end
+
+  it "allows you to edit a single landmark" do
+    pending "write your own spec!"
   end
 end
