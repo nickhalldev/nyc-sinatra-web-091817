@@ -1,4 +1,9 @@
-# :statue_of_liberty: :oncoming_police_car: :taxi: :fire_engine: :construction: :vertical_traffic_light: :tram: :helicopter:
+---
+tags: orm, active record, sinatra, rspec, forms
+languages: ruby
+---
+
+:statue_of_liberty: :oncoming_police_car: :taxi: :fire_engine: :construction: :vertical_traffic_light: :tram: :helicopter:
 #Welcome to NYC Sinatra!
 
 We're going to build a history site for New York City, so we're going to need to
@@ -65,4 +70,4 @@ call it something less clear like Roles if you wanted to.
 Make sure to create web pages, routes, etc to add figures, titles, landmarks, years, etc.
 
 You should be able to create a figure if he/she doesn't exist when creating a
-title, or just add an existing figure to a title. 
+title, or just add an existing figure to a title.
