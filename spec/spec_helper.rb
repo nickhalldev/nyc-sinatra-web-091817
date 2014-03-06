@@ -4,6 +4,7 @@
 # loaded once.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+ENV['SINATRA_ENV'] = 'test'
 require_relative '../config/environment'
 
 RSpec.configure do |config|

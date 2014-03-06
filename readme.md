@@ -78,3 +78,6 @@ Your forms should allow multiple select, so you should also be able to add
 multiple figures to a title at the same time, e.g. If I create the Mayor title
 and a bunch of mayors are already in my database, I'll want to add them all at
 once when I create the Mayor title.
+
+
+**Make sure to migrate your test database by running `rake db:migrate SINATRA_ENV=test`**
