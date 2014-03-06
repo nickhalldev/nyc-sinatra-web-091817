@@ -71,3 +71,5 @@ Make sure to create web pages, routes, etc to add figures, titles, landmarks, ye
 
 You should be able to create a figure if he/she doesn't exist when creating a
 title, or just add an existing figure to a title.
+
+**Make sure to migrate your test database by running `rake db:migrate SINATRA_ENV=test`**
