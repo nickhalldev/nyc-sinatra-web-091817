@@ -1,6 +1,7 @@
 ---
 tags: orm, activerecord, sinatra, rspec, forms
 languages: ruby
+  resources: 2
 ---
 
 :statue_of_liberty: :oncoming_police_car: :taxi: :fire_engine: :construction: :vertical_traffic_light: :tram: :helicopter:
@@ -81,3 +82,7 @@ once when I create the Mayor title.
 
 
 **Make sure to migrate your test database by running `rake db:migrate SINATRA_ENV=test`**
+
+## Resources
+* [Screencasts](http://screencasts.org/) - [Using ActiveRecord with Sinatra](http://screencasts.org/episodes/activerecord-with-sinatra)
+* [Sinatra Up and Running](http://books.flatironschool.com/books/101) - [Chapter 5 Hands On: Your Own Blog Engine](http://books.flatironschool.com/books/101), page 103
