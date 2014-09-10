@@ -8,8 +8,6 @@
 
 ### Introduction
 
-:statue_of_liberty: :oncoming_police_car: :taxi: :fire_engine: :construction: :vertical_traffic_light: :tram: :helicopter:
-
 We're going to build a history site for New York City, so we're going to need to
 create the following database structure.
 
