@@ -4,8 +4,11 @@
   resources: 2
 ---
 
+# Welcome to NYC Sinatra!
+
+### Introduction
+
 :statue_of_liberty: :oncoming_police_car: :taxi: :fire_engine: :construction: :vertical_traffic_light: :tram: :helicopter:
-#Welcome to NYC Sinatra!
 
 We're going to build a history site for New York City, so we're going to need to
 create the following database structure.
@@ -49,10 +52,11 @@ So for example:
 | 3                  | Govenor                |
 | 4                  | NYC Parks commissioner |
 
+### Join Tables
+
 Any time you have a `has_many` to `has_many` relationship, you'll need to create
 a join table. An example of a `has_many` to `has_many` relationship is titles
-and figures. A tiles `has_many` figures because many people hold a title over time
-and a figure usually `has_many` titles over their career.
+and figures. A tiles `has_many` figures because many people hold a title over time and a figure usually `has_many` titles over their career.
 
 An example of a join table is below. We called it figure_titles, but you could
 call it something less clear like Roles if you wanted to.
@@ -70,6 +74,8 @@ call it something less clear like Roles if you wanted to.
 Make sure to create web pages, routes, etc. to add, update, and edit figures,
 titles, landmarks, years, etc.
 
+### Forms
+
 Your forms will need to be complex. So when you create a new title, you can also
 add a figure to that title. You should also be able to create a new figure if
 he/she doesn't already exist in your database. The same applies for all your models
@@ -81,8 +87,10 @@ and a bunch of mayors are already in my database, I'll want to add them all at
 once when I create the Mayor title.
 
 
+### Test Database Migration
+
 **Make sure to migrate your test database by running `rake db:migrate SINATRA_ENV=test`**
 
-## Resources
+### Resources
 * [Screencasts](http://screencasts.org/) - [Using ActiveRecord with Sinatra](http://screencasts.org/episodes/activerecord-with-sinatra)
 * [Sinatra Up and Running](http://books.flatironschool.com/books/101) - [Chapter 5 Hands On: Your Own Blog Engine](http://books.flatironschool.com/books/101), page 103
