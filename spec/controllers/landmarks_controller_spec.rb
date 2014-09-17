@@ -10,7 +10,10 @@ describe LandmarksController do
   end
 
   it "allows you to create a new landmark" do
-    pending "write your own spec!"
+    get '/landmarks/new'
+    expect(last_response.body).to include('<form')
+    expect(last_response.body).to include('landmark[name]')
+    expect(last_response.body).to include('landmark[year_completed]')
   end
 
   it "allows you to list all landmarks" do
@@ -20,11 +23,12 @@ describe LandmarksController do
 
   it "allows you to see a single landmark" do
     @landmark = Landmark.first.id
-    get "/landmark/#{@landmark}"
+    get "/landmarks/#{@landmark}"
     expect(last_response.status).to eq(200)
   end
 
   it "allows you to edit a single landmark" do
-    pending "write your own spec!"
+    @landmark = Landmark.first.id
+    get "/landmarks/#{@landmark}/edit"
   end
 end
