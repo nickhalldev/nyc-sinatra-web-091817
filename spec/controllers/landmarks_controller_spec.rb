@@ -20,7 +20,7 @@ describe LandmarksController do
 
   it "allows you to see a single landmark" do
     @landmark = Landmark.first.id
-    get "/landmark/#{@landmark}"
+    get "/landmarks/#{@landmark}"
     expect(last_response.status).to eq(200)
   end
 
