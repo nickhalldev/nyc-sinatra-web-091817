@@ -71,5 +71,3 @@ Your forms should allow multiple select, so you should also be able to add multi
 
 **Make sure to migrate your test database by running `rake db:migrate SINATRA_ENV=test`**
 
-### Resources
-* [Screencasts](http://screencasts.org/) - [Using ActiveRecord with Sinatra](http://screencasts.org/episodes/activerecord-with-sinatra)
