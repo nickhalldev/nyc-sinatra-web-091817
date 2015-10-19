@@ -1,5 +1,12 @@
 class LandmarksController < ApplicationController
+
+  get '/' do
+    redirect '/landmarks'
+  end
+
   get '/landmarks' do
+    @landmark = Landmark.all
+    @figure = Figure.all
     erb :'landmarks/index'
   end
 
@@ -16,4 +23,10 @@ class LandmarksController < ApplicationController
     @landmark = Landmark.find(params[:id])
     erb :"landmarks/edit"
   end
+
+  post "/landmarks" do
+    Landmark.create(params[:landmark])
+    redirect '/landmarks'
+  end
+
 end
