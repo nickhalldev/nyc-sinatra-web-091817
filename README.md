@@ -63,9 +63,9 @@ Make sure to create web pages, routes, etc. to add, update, and edit figures, ti
 
 ### Forms
 
-Your forms will need to be complex. So when you create a new title, you can also add a figure to that title. You should also be able to create a new figure if he/she doesn't already exist in your database. The same applies for all your models that have an association.
+Your forms will need to be nested. So when you create a new title, you can also add a figure to that title. You should also be able to create a new figure if he/she doesn't already exist in your database. The same applies for all your models that have an association.
 
-Your forms should allow multiple select, so you should also be able to add multiple figures to a title at the same time, e.g. If I create the Mayor title and a bunch of mayors are already in my database, I'll want to add them all at once when I create the Mayor title.
+Your forms should use checkboxes, which allow you to add multiple figures to a title at the same time, e.g. If I create the Mayor title and a bunch of mayors are already in my database, I'll want to add them all at once when I create the Mayor title.
 
 ### Test Database Migration
 
