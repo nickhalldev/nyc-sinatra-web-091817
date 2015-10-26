@@ -2,10 +2,10 @@
   <th>Name</th>
   <th>Year Completed</th>
   <tr>
-    <% @landmark.each do |land| %>
-      <td align="center"><a href="/landmarks/<%= land.id %>"><%= land.name %></a></td>
+    <% @landmarks.each do |landmark| %>
+      <td align="center"><a href="/landmarks/<%= landmark.id %>"><%= landmark.name %></a></td>
       
-      <td align="center"><%= land.year_completed %></td>
+      <td align="center"><%= landmark.year_completed %></td>
   </tr>
   <% end %>
 </table>
