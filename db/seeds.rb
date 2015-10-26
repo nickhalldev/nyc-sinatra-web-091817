@@ -39,16 +39,12 @@ end
 
 figure_list = {
     "Billy The Kid" => {
-      :year_completed => 1881
     },
     "Mark Zuckerberg" => {
-      :year_completed => 1984
     },
     "Ada Lovelace" => {
-      :year_completed => 1852
     },
-    "Linus Torvalds" => {
-      :year_completed => 1969
+    "Linus Torvalds" => { 
     }
   }
 
@@ -61,13 +57,10 @@ end
 
 title_list = {
     "The Mayor" => {
-      :year_completed => 1901
     },
     "The Don" => {
-      :year_completed => 1995
     },
     "Mr. President" => {
-      :year_completed => 2012
     }
   }
 
