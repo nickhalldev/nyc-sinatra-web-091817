@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,13 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 1) do
+ActiveRecord::Schema.define(version: 4) do
 
-  create_table "landmarks", force: true do |t|
+  create_table "figures", force: :cascade do |t|
+    t.string "name"
+  end
+
+  create_table "landmarks", force: :cascade do |t|
     t.string   "name"
     t.integer  "year_completed"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "roles", force: :cascade do |t|
+    t.integer "title_id"
+    t.integer "figure_id"
+  end
+
+  create_table "titles", force: :cascade do |t|
+    t.string "name"
   end
 
 end
