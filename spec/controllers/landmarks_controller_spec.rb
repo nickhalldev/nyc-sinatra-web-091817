@@ -10,7 +10,11 @@ describe LandmarksController do
   end
 
   it "allows you to create a new landmark" do
-    pending "write your own spec!"
+    visit '/landmarks/new'
+    binding.pry
+    expect(page.body).to include('<form')
+    expect(last_response.body).to include('landmark[name]')
+    expect(last_response.body).to include('landmark[year_completed]')
   end
 
   it "allows you to list all landmarks" do
