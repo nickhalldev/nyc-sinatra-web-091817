@@ -2,7 +2,10 @@ require 'spec_helper'
 
 describe LandmarksController do
   before do
-    Landmark.create(name: 'BQE', year_completed: 1961)
+    queenb = Figure.new("Beyonce")
+    bqe = Landmark.create(name: 'BQE', year_completed: 1961)
+    bqe.figure = queenb
+    bqe.save
   end
 
   after do

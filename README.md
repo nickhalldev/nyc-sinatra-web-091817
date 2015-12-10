@@ -27,12 +27,12 @@ So for example:
 
 **Landmarks**
 
-| **id**             | **name**               |
-|:------------------:|:----------------------:|
-| 1                  | BQE                    |
-| 2                  | Holland Tunnel         |
-| 3                  | Wall Street Wall       |
-| 4                  | Brooklyn Battery Tunnel|
+| **id**             | **name**               | **figure_id** |
+|:------------------:|:----------------------:|:--------------|
+| 1                  | BQE                    | 1
+| 2                  | Holland Tunnel         | 5
+| 3                  | Wall Street Wall       |3
+| 4                  | Brooklyn Battery Tunnel|10
 
 **Titles**
 
