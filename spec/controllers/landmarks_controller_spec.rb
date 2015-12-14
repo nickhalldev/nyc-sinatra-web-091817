@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe LandmarksController do
   before do
-    queenb = Figure.new("Beyonce")
+    queenb = Figure.create(:name => "Beyonce")
     bqe = Landmark.create(name: 'BQE', year_completed: 1961)
     bqe.figure = queenb
     bqe.save
