@@ -71,5 +71,7 @@ Your forms should use checkboxes, which allow you to add multiple figures to a t
 
 **Make sure to migrate your test database by running `rake db:migrate SINATRA_ENV=test`**
 
+### Recources
 
++ [Sinatra ActiveRecord screencast](http://screencasts.org/episodes/activerecord-with-sinatra)
 <a href='https://learn.co/lessons/nyc-sinatra' data-visibility='hidden'>View this lesson on Learn.co</a>
