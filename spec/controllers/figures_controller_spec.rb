@@ -3,6 +3,7 @@ require 'spec_helper'
 describe FiguresController do
   before do
     queenb = Figure.create(:name => "Beyonce")
+    kanye = Figure.create(:name => "Kanye")
     bqe = Landmark.create(name: 'BQE', year_completed: 1961)
     mr_president = Title.create(name: "Mr. President")
     bqe.figure = queenb
@@ -25,7 +26,7 @@ describe FiguresController do
     fill_in :figure_name, :with => "Doctor Who"
     check "title_#{Title.first.id}"
     click_button "Create New Figure"
-    expect(Figure.all.count).to eq(2)
+    expect(Figure.all.count).to eq(3)
   end
 
   it "allows you to list all figures" do
@@ -33,8 +34,8 @@ describe FiguresController do
     
     expect(page.status_code).to eq(200)
 
-    expect(page.body).to include("Mr. President")
-    expect(page.body).to include('The Don')
+    expect(page.body).to include("Beyonce")
+    expect(page.body).to include('Kanye')
   end
 
   it "allows you to see a single Figure" do
@@ -46,7 +47,7 @@ describe FiguresController do
 
   it "allows you to view form edit a single figure" do
     @figure = Figure.first
-    get "/landmarks/#{@figure.id}/edit"
+    get "/figures/#{@figure.id}/edit"
 
     expect(last_response.status).to eq(200)
     expect(last_response.body).to include('<form')

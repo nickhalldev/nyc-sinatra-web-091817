@@ -1,8 +1,13 @@
 <table>
   <th>Person Name</th>
   <tr>
-    <% @figure.each do |figures| %>
-      <td align="center"><a href="/figures/<%= figures.id %>"><%= figures.name %></a>
+    <% @figures.each do |figure| %>
+      <td align="center"><a href="/figures/<%= figure.id %>"><%= figure.name %></a>
+      <ul>
+        <%figure.titles.each do |title|%>
+        <li><%=title.name%></li>
+        <%end%>
+      </ul>
      </tr> </td>
   <% end %>
 </table>
