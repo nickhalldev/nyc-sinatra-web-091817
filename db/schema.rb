@@ -13,6 +13,11 @@
 
 ActiveRecord::Schema.define(version: 5) do
 
+  create_table "figure_titles", force: :cascade do |t|
+    t.integer "title_id"
+    t.integer "figure_id"
+  end
+
   create_table "figures", force: :cascade do |t|
     t.string "name"
   end
@@ -23,11 +28,6 @@ ActiveRecord::Schema.define(version: 5) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "figure_id"
-  end
-
-  create_table "roles", force: :cascade do |t|
-    t.integer "title_id"
-    t.integer "figure_id"
   end
 
   create_table "titles", force: :cascade do |t|
