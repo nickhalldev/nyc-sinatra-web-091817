@@ -36,12 +36,12 @@ Write migrations to create the following tables:
 
 **Landmarks**
 
-| **id**             | **name**               | **figure_id** |
-|:------------------:|:----------------------:|:--------------|
-| 1                  | BQE                    | 1
-| 2                  | Holland Tunnel         | 5
-| 3                  | Wall Street Wall       |3
-| 4                  | Brooklyn Battery Tunnel|10
+| **id**             | **name**               | **figure_id** | **year_completed** |
+|:------------------:|:----------------------:|:--------------|--------------------|
+| 1                  | BQE                    | 1             |  1947              |
+| 2                  | Holland Tunnel         | 5             |  50 B.C.           |
+| 3                  | Wall Street Wall       |3              |  1684              |
+| 4                  | Brooklyn Battery Tunnel|10             |  1973              |
 
 **Titles**
 
