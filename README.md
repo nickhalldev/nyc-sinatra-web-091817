@@ -36,12 +36,13 @@ Write migrations to create the following tables:
 
 **Landmarks**
 
-| **id**             | **name**               | **figure_id** |
-|:------------------:|:----------------------:|:--------------|
-| 1                  | BQE                    | 1
-| 2                  | Holland Tunnel         | 5
-| 3                  | Wall Street Wall       |3
-| 4                  | Brooklyn Battery Tunnel|10
+| **id**             | **name**               | **figure_id** | **year_completed** |
+|:------------------:|:----------------------:|:--------------|--------------------|
+| 1                  | BQE                    | 1             |  1947              |
+| 2                  | Holland Tunnel         | 5             |  50 B.C.           |
+| 3                  | Wall Street Wall       |3              |  1684              |
+| 4                  | Brooklyn Battery Tunnel|10             |  1973              |
+
 
 **Titles**
 
@@ -49,7 +50,7 @@ Write migrations to create the following tables:
 |:------------------:|:----------------------:|
 | 1                  | Mayor                  |
 | 2                  | President              |
-| 3                  | Govenor                |
+| 3                  | Governor                |
 | 4                  | NYC Parks commissioner |
 
 #### Join Tables
@@ -71,12 +72,14 @@ Below is an example of a join table. We called it figure_titles and you should d
 
 ### Models
 
+
 Now, use the `has_many`, `belongs_to` and `has_many, :through` macros to set up the correct associations in your models:
 
 * A Landmark `belongs_to` a figure and a figure `has_many` landmarks.
 * A title `has_many` figure_titles and many figures through figure_titles. 
 * A figure `has_many` figure_titles and many titles through figure_titles.
 * A figure_title `belongs_to` a figure and a title. 
+
 
 
 **Top-Tip:** Type `tux` in your terminal in the directory of this project in order to drop into an interactive Ruby console that is connected to your models and database. Here, you can play around with creating and associating instances of the classes you create once you properly set up the above. This is a helpful way to solidify your understanding of the relationships between your models before you go into building the routes, views and forms that will allows your users to interact with them. Start out by creating a new figure, landmark and title. Then, add that landmark and title to the figures collection of landmarks and titles respectively. Keep playing around from there however you like. 
@@ -92,4 +95,6 @@ You should create a Landmarks Controller and a Figures Controller. This lab is t
 Your forms will need to be complex. Your form for a new figure should dynamically generate checkboxes out of the available landmarks and titles. It should also have fields for creating a new landmark and/or a new title. The controller action that catches the POST request sent by submitting this form should account for this. The same is true of you form for editing a given figure. Read the tests very carefully to understand how you should set up your forms. 
 
 
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/nyc-sinatra'>Sinatra NYC</a> on Learn.co and start learning to code for free.</p>
 
