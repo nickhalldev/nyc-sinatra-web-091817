@@ -89,7 +89,7 @@ Now, use the `has_many`, `belongs_to` and `has_many, :through` macros to set up 
 
 You should create a Landmarks Controller and a Figures Controller. This lab is test-driven and will also require you to think outside the box to get things working. 
 
-Your forms will need to be complex. Your form for a new figure should dynamically generate checkboxes out of the available landmarks and titles. It should also have fields for creating a new landmark and/or a new title. The controller action that catches the POST request sent by submitting this form should account for this. The same is true of you form for editing a given figure. Read the tests very carefully to understand how you should set up your forms. 
+Your forms will need to be complex. Your form for a new figure should dynamically generate checkboxes out of the available landmarks and titles. It should also have fields for creating a new landmark and/or a new title. The controller action that catches the POST request sent by submitting this form should account for this. The same is true of your form for editing a given figure. Read the tests very carefully to understand how you should set up your forms. 
 
 
 
