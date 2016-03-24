@@ -74,4 +74,16 @@ describe LandmarksController do
     expect(@landmark.year_completed.to_s).to eq("9999")
 
   end
+
+  it "creates checkboxes for all the landmarks and titles created on the Figures new page" do 
+    Landmark.create(name: 'BQE', year_completed: 1961)
+      visit "/figures/new"
+      expect(page).to have_css("input[type=\"checkbox\"]")
+      expect(page).to have_content('BQE')
+     Title.create(:name => "Mayor")
+      visit "/figures/new"
+      expect(page).to have_css("input[type=\"checkbox\"]")
+      expect(page).to have_content('Mayor')
+      
+  end
 end
