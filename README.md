@@ -39,7 +39,7 @@ Write migrations to create the following tables:
 | **id**             | **name**               | **figure_id** | **year_completed** |
 |:------------------:|:----------------------:|:--------------|--------------------|
 | 1                  | BQE                    | 1             |  1947              |
-| 2                  | Holland Tunnel         | 5             |  50 B.C.           |
+| 2                  | Holland Tunnel         | 5             |  1927              |
 | 3                  | Wall Street Wall       |3              |  1684              |
 | 4                  | Brooklyn Battery Tunnel|10             |  1973              |
 
