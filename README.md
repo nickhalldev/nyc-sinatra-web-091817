@@ -40,7 +40,7 @@ Write migrations to create the following tables:
 |:------------------:|:----------------------:|:--------------|--------------------|
 | 1                  | BQE                    | 1             |  1947              |
 | 2                  | Holland Tunnel         | 5             |  1927              |
-| 3                  | Wall Street Wall       |3              |  1684              |
+| 3                  | Wall Street Wall       |4              |  1684              |
 | 4                  | Brooklyn Battery Tunnel|10             |  1973              |
 
 **Titles**
@@ -95,3 +95,5 @@ Your forms will need to be complex. Your form for a new figure should dynamicall
 
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/nyc-sinatra'>Sinatra NYC</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/nyc-sinatra'>Sinatra NYC</a> on Learn.co and start learning to code for free.</p>
