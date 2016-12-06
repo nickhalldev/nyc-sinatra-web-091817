@@ -19,7 +19,7 @@ Our client has decided that the history app we're building them should have a sp
 Write migrations to create the following tables:
 
 
-**Figure**
+**Figures**
 
 | **id**             | **name**          |
 |:------------------:|:-----------------:|
