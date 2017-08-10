@@ -44,7 +44,7 @@ describe LandmarksController do
     expect(last_response.body).to include("1961")
   end
 
-  it "allows you to view form edit a single landmark" do
+  it "allows you to view the form to edit a single landmark" do
     @landmark = Landmark.first
     get "/landmarks/#{@landmark.id}/edit"
 
